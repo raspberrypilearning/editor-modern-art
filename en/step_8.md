@@ -77,3 +77,13 @@ The rectangles should appear at different angles each time the program runs.
   <img src="images/randomheading.png"
        alt="A piece of modern art made from overlapping rectangles of different sizes, colours, positions, and orientations.">
 </div>
+
+
+<div class="c-project-callout c-project-callout--tip">
+
+### Tip
+
+- To make the drawing go faster, add `speed(0)` to your `draw_rectangle()` function and watch it go!
+- Changing the number in `range(30)` changes how many rectangles are drawn - have a play with this and run the code again!
+
+</div>
