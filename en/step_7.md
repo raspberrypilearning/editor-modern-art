@@ -47,7 +47,7 @@ def draw_rectangle():          # Function to draw a random-sized rectangle:
     randomplace()                   # Move to a random place
     length = randint(10, 100)       # Choose a random width
     height = randint(10, 100)       # Choose a random height
-    begin_fill()                    # Start filling the shape
+    begin_fill()                    # Start filling the shape with colour
     for i in range(2):              # Draw two pairs of sides
         forward(length)                 # Draw the top/bottom edge
         right(90)                       # Turn right

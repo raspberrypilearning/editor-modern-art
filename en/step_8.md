@@ -42,15 +42,16 @@ def randomplace():             # Function to move the turtle to a random positio
 #     randomplace()            # Move to a random place
 #     stamp()                  # Stamp the turtle shape
 
-def randomheading():
-    setheading(randint(1, 360))
+def randomheading():           # Function to set a random heading for the next rectangle
+    setheading(randint(1, 360))     # Choose a random angle for the heading
 
 def draw_rectangle():          # Function to draw a random-sized rectangle:
     randomcolour()                  # Choose a random colour
     randomplace()                   # Move to a random place
     length = randint(10, 100)       # Choose a random width
     height = randint(10, 100)       # Choose a random height
-    begin_fill()                    # Start filling the shape
+    randomheading()                 # Choose a random rotation
+    begin_fill()                    # Start filling the shape with colour
     for i in range(2):              # Draw two pairs of sides
         forward(length)                 # Draw the top/bottom edge
         right(90)                       # Turn right
