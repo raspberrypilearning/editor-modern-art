@@ -1,0 +1,4 @@
+name: "Modern Art Starter"
+identifier: "editor-modern-art-starter"
+type: 'python'
+build: true

@@ -1,14 +1,34 @@
-title: Project title in sentence case
+---
 hero_image: images/banner.png
-description: A short description of the project
-listed: false
-pdf: false
+theme: violet
+duration: 2
+listed: true
+ingredient: false
+copyedit: false
+curriculum: 1, design-0, programming-1, phys-comp-0, manufacture-0, community-0
+title: Modern Art
+description: Code your own computer-generated modern art.
+original_url: https://codeclubprojects.org/en-GB/python/editor-modern-art
+interests: art
+technologies: python
+site_areas: projects
+hardware: ''
+software: python
+version: 3
+last_tested: 2025-01-03
 steps:
-  - title: What you will make
-  - title: Step title
-    completion:
-      - engaged      
-  - title: Challenge
-    challenge: true
-    completion:
-      - external
+- title: What you will make
+- title: Set the turtle colour
+  completion:
+  - engaged
+- title: Make the colour random
+- title: Turn the colour code into a function
+  completion:
+  - internal
+- title: Move the turtle to a random place
+- title: Create turtle stamp art
+- title: Draw modern art with rectangles
+- title: Challenge - Rotate shapes randomly
+  challenge: true
+  completion:
+  - external
