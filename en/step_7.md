@@ -36,6 +36,7 @@ def randomplace():             # Function to move the turtle to a random positio
 
 # Comment out the turtle stamp code by placing hashtags at the beginning of each line you don't want
 # shape("turtle")             # Set the turtle shape
+
 # for i in range(30):          # Repeat 30 times
 #     randomcolour()           # Choose a random colour
 #     randomplace()            # Move to a random place
