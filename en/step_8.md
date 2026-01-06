@@ -45,8 +45,6 @@ def randomheading():
     setheading(randint(1, 360))
 
 def draw_rectangle():
-    speed(0)
-    hideturtle()
     randomcolour()
     randomplace()
     randomheading()
