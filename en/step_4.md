@@ -14,22 +14,22 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 1
-line_highlights: 6-11,13
+line_highlights: 6-12
 ---
 
-from turtle import *
-from random import *
+from turtle import *          # Import turtle graphics tools
+from random import *          # Import random number tools
 
-colormode(255)
+colormode(255)                # Use RGB colour values from 0–255
 
-def randomcolour(): # define the function - make sure the next lines are indented!
-    red = randint(0, 255)
-    green = randint(0, 255)
-    blue = randint(0, 255)
-    color(red, green, blue)
+def randomcolour():           # Function to set a random turtle colour
+    red = randint(0, 255)           # Pick a random red value
+    green = randint(0, 255)         # Pick a random green value
+    blue = randint(0, 255)          # Pick a random blue value
+    color(red, green, blue)         # Set the turtle colour
 
-randomcolour()
-shape("turtle")
+randomcolour()                # Choose a random colour
+shape("turtle")               # Set shape to Turtle
 
 --- /code ---
 </div>

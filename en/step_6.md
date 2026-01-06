@@ -4,7 +4,7 @@
 Use stamps and a loop to create turtle art.
 --- /task ---
 
-The `stamp()` command leaves a copy of the turtle on the screen.
+The `stamp()` command leaves a copy of the turtle on the screen. By putting it inside a *loop*, you can make lots of turtle stamps at once.
 
 <div class="c-project-code">
 --- code ---
@@ -16,30 +16,30 @@ line_number_start: 1
 line_highlights: 21-25
 ---
 
-from turtle import *
-from random import *
+from turtle import *          # Import turtle graphics tools
+from random import *          # Import random number tools
 
-colormode(255)
+colormode(255)                # Use RGB colour values from 0–255
 
-def randomcolour():
-    red = randint(0, 255)
-    green = randint(0, 255)
-    blue = randint(0, 255)
-    color(red, green, blue)
+def randomcolour():           # Function to set a random turtle colour
+    red = randint(0, 255)           # Pick a random red value
+    green = randint(0, 255)         # Pick a random green value
+    blue = randint(0, 255)          # Pick a random blue value
+    color(red, green, blue)         # Set the turtle colour
 
-def randomplace():
-    penup()
-    x = randint(-100, 100)
-    y = randint(-100, 100)
-    goto(x, y)
-    pendown()
+def randomplace():            # Function to move the turtle to a random position
+    penup()                   # Lift the pen so no line is drawn
+    x = randint(-100, 100)    # Pick a random x coordinate
+    y = randint(-100, 100)    # Pick a random y coordinate
+    goto(x, y)                # Move to the random position
+    pendown()                 # Put the pen back down
 
-shape("turtle")
+shape("turtle")               # Set shape to Turtle
 
-for i in range(30):
-    randomcolour()
-    randomplace()
-    stamp()
+for i in range(30):           # Repeat 30 times
+    randomcolour()                  # Choose a random colour
+    randomplace()                   # Move to a random place
+    stamp()                         # Stamp the turtle shape
 
 --- /code ---
 </div>

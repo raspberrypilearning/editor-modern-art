@@ -16,13 +16,13 @@ line_number_start: 1
 line_highlights: 6
 ---
 
-from turtle import *
-from random import *
+from turtle import *          # Import turtle graphics tools
+from random import *          # Import random number tools
 
-colormode(255)
+colormode(255)                # Use RGB colour values from 0–255
 
-color(randint(0, 255), randint(0, 255), randint(0, 255))
-shape("turtle")
+color(randint(0, 255), randint(0, 255), randint(0, 255))        # Set colour values to three random numbers
+shape("turtle")               # Set shape to Turtle
 
 --- /code ---
 </div>
