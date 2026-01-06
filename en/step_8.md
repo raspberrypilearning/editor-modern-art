@@ -63,8 +63,17 @@ for i in range(30):            # Repeat 30 times
     draw_rectangle()           # Draw a rectangle
 
 --- /code ---
+
+--- task ---
+
+**Test**: Run your code several times.  
+The rectangles should appear at different angles each time the program runs.
+
+--- /task ---
+
 </div>
 
 <div class="c-project-output">
-<pre>Rectangles appear at different angles.</pre>
+  <img src="images/randomheading.png"
+       alt="A piece of modern art made from overlapping rectangles of different sizes, colours, positions, and orientations.">
 </div>

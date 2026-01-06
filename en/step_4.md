@@ -32,6 +32,14 @@ randomcolour()                # Choose a random colour
 shape("turtle")               # Set shape to Turtle
 
 --- /code ---
+
+--- task ---
+
+**Test**: Run your code and check the output.  
+The turtle should still appear in a random colour, even though the colour code is now inside a function.
+
+--- /task ---
+
 </div>
 
 <div class="c-project-output">
