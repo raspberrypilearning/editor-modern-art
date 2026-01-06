@@ -25,8 +25,18 @@ color(randint(0, 255), randint(0, 255), randint(0, 255))        # Set colour val
 shape("turtle")               # Set shape to Turtle
 
 --- /code ---
+
+--- task ---
+
+**Test**: Run your code several times.  
+Each time you run the code, the turtle should appear in a different colour.
+
+--- /task ---
+
+
 </div>
 
 <div class="c-project-output">
-<pre>The turtle changes colour every time you click Run.</pre>
+  <img src="images/randomcolours.png"
+       alt="Three turtles shown after different runs of the program, each appearing in a different random colour.">
 </div>

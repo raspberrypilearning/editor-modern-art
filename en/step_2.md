@@ -26,6 +26,14 @@ color(255, 0, 0)              # Set colour value to 255,0,0 = Red
 shape("turtle")               # Set shape to Turtle
 
 --- /code ---
+
+--- task ---
+
+**Test**: Run your code and check the output.  
+A turtle should appear on the screen in the colour you set using the RGB values.
+
+--- /task ---
+
 </div>
 
 <div class="c-project-output">

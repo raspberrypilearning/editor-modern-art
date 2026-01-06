@@ -47,7 +47,7 @@ def draw_rectangle():          # Function to draw a random-sized rectangle:
     randomplace()                   # Move to a random place
     length = randint(10, 100)       # Choose a random width
     height = randint(10, 100)       # Choose a random height
-    begin_fill()                    # Start filling the shape
+    begin_fill()                    # Start filling the shape with colour
     for i in range(2):              # Draw two pairs of sides
         forward(length)                 # Draw the top/bottom edge
         right(90)                       # Turn right
@@ -58,10 +58,19 @@ def draw_rectangle():          # Function to draw a random-sized rectangle:
 for i in range(30):            # Repeat 30 times
     draw_rectangle()           # Draw a rectangle
 
-
 --- /code ---
+
+--- task ---
+
+**Test**: Run your code and check the output.  
+The turtle stamps should be gone and replaced with many coloured rectangles of different sizes and positions.
+
+--- /task ---
+
 </div>
 
 <div class="c-project-output">
-<pre>A piece of modern art made from coloured rectangles appears.</pre>
+  <img src="images/rectangles.png"
+       alt="A piece of modern art made from overlapping rectangles of different sizes, colours and positions.">
 </div>
+

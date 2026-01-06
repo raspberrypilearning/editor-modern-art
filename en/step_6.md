@@ -42,8 +42,17 @@ for i in range(30):           # Repeat 30 times
     stamp()                         # Stamp the turtle shape
 
 --- /code ---
+
+--- task ---
+
+**Test**: Run your code and watch what happens.  
+You should see many turtle shapes stamped in different places and colours across the screen.
+
+--- /task ---
+
 </div>
 
 <div class="c-project-output">
-<pre>Lots of turtles are stamped in different places and colours.</pre>
+  <img src="images/stamp.png"
+       alt="Many small turtle shapes stamped across the screen in different colours and positions, creating a scattered turtle art pattern.">
 </div>

@@ -41,10 +41,19 @@ shape("turtle")               # Set shape to Turtle
 
 
 --- /code ---
+
+--- task ---
+
+**Test**: Run your code several times.  
+Each time you run the code, the turtle should appear in a different place and a different colour, without drawing any lines.
+
+--- /task ---
+
 </div>
 
 <div class="c-project-output">
-<pre>The turtle appears in a random place and colour.</pre>
+  <img src="images/randomplace.png"
+       alt="Three turtles shown in different positions on the screen, demonstrating that the turtle appears in a random place each time the code runs.">
 </div>
 
 <div class="c-project-callout c-project-callout--debug">

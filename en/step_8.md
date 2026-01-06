@@ -42,15 +42,16 @@ def randomplace():             # Function to move the turtle to a random positio
 #     randomplace()            # Move to a random place
 #     stamp()                  # Stamp the turtle shape
 
-def randomheading():
-    setheading(randint(1, 360))
+def randomheading():           # Function to set a random heading for the next rectangle
+    setheading(randint(1, 360))     # Choose a random angle for the heading
 
 def draw_rectangle():          # Function to draw a random-sized rectangle:
     randomcolour()                  # Choose a random colour
     randomplace()                   # Move to a random place
     length = randint(10, 100)       # Choose a random width
     height = randint(10, 100)       # Choose a random height
-    begin_fill()                    # Start filling the shape
+    randomheading()                 # Choose a random rotation
+    begin_fill()                    # Start filling the shape with colour
     for i in range(2):              # Draw two pairs of sides
         forward(length)                 # Draw the top/bottom edge
         right(90)                       # Turn right
@@ -62,8 +63,27 @@ for i in range(30):            # Repeat 30 times
     draw_rectangle()           # Draw a rectangle
 
 --- /code ---
+
+--- task ---
+
+**Test**: Run your code several times.  
+The rectangles should appear at different angles each time the program runs.
+
+--- /task ---
+
 </div>
 
 <div class="c-project-output">
-<pre>Rectangles appear at different angles.</pre>
+  <img src="images/randomheading.png"
+       alt="A piece of modern art made from overlapping rectangles of different sizes, colours, positions, and orientations.">
+</div>
+
+
+<div class="c-project-callout c-project-callout--tip">
+
+### Tip
+
+- To make the drawing go faster, add `speed(0)` to your `draw_rectangle()` function and watch it go!
+- Changing the number in `range(30)` changes how many rectangles are drawn - have a play with this and run the code again!
+
 </div>
