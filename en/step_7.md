@@ -4,7 +4,16 @@
 Replace turtle stamps with randomly sized rectangles.
 --- /task ---
 
-You can turn your turtle art into modern art by drawing rectangles instead. Create 
+You can turn your turtle art into modern art by drawing rectangles instead. **Comment out** the lines of code you don't need, and add some instructions for rectangles.
+
+<div class="c-project-callout c-project-callout--tip">
+
+### Tip
+
+Commenting out means telling the computer to ignore a line of code without deleting it.
+In Python, you do this by putting a # at the start of the line. 
+
+</div>
 
 <div class="c-project-code">
 --- code ---
@@ -13,7 +22,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 1
-line_highlights: 27-44,46-47
+line_highlights: 19-25, 27-44,46-47
 ---
 
 from turtle import *          # Import turtle graphics tools

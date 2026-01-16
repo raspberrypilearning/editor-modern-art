@@ -43,7 +43,11 @@ The turtle should still appear in a random colour, even though the colour code i
 </div>
 
 <div class="c-project-output">
-<pre>The turtle is still a random colour, but the code is clearer.</pre>
+<pre><div class="c-project-output">
+  <img src="images/randomcolours.png"
+       alt="Three turtles shown after different runs of the program, each appearing in a different random colour.">
+</div>
+</pre>
 </div>
 
 <div class="c-project-callout c-project-callout--debug">
