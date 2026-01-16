@@ -4,7 +4,7 @@
 Add random rotation to your artwork.
 --- /task ---
 
-You can rotate the turtle to make the rectangles appear at different angles.
+You can **rotate** the turtle to make the rectangles appear at different angles.
 
 <div class="c-project-code">
 --- code ---

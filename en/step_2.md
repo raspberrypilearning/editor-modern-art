@@ -1,13 +1,11 @@
 <h2 class="c-project-heading--task">Set the turtle colour</h2>
 
+<div class="c-project-code">
 --- task ---
-Set the turtle’s colour using red, green, and blue values.
+Set the turtle’s colour using red, green, and blue values. 
+Each colour value can be between `0` and `255`.
 --- /task ---
 
-Set the turtle colour by choosing how much red, green, and blue you want.  
-Each value can be between `0` and `255`.
-
-<div class="c-project-code">
 --- code ---
 ---
 language: python
@@ -26,6 +24,7 @@ color(255, 0, 0)              # Set colour value to 255,0,0 = Red
 shape("turtle")               # Set shape to Turtle
 
 --- /code ---
+</div>
 
 --- task ---
 
@@ -34,10 +33,10 @@ A turtle should appear on the screen in the colour you set using the RGB values.
 
 --- /task ---
 
-</div>
-
 <div class="c-project-output">
-<pre>A turtle appears in the colour you chose.</pre>
+<pre><div class="c-project-output">
+  <img src="images/redturtle.png"
+       alt="Three turtles shown after different runs of the program, each appearing in a different random colour."></pre>
 </div>
 
 <div class="c-project-callout c-project-callout--tip">
