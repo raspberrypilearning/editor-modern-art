@@ -1,11 +1,9 @@
-<h2 class="c-project-heading--task">Move the turtle to a random place</h2>
+<h2 class="c-project-heading--task">Create turtle stamp art</h2>
 
---- task ---
-Move the turtle to a random position on the screen.
---- /task ---
+### Step 1
+Use stamps and a **loop** to create turtle art.
 
-The centre of the screen is at `(0, 0)`.  
-You can move the turtle to a random x and y position.
+The `stamp()` command leaves a copy of the turtle on the screen. By putting it inside a **loop**, you can make lots of turtle stamps at once.
 
 <div class="c-project-code">
 --- code ---
@@ -14,7 +12,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 1
-line_highlights: 12-17,20
+line_highlights: 21-25
 ---
 
 from turtle import *          # Import turtle graphics tools
@@ -35,32 +33,24 @@ def randomplace():            # Function to move the turtle to a random position
     goto(x, y)                # Move to the random position
     pendown()                 # Put the pen back down
 
-randomcolour()                # Choose a random colour
-randomplace()                 # Move to a random place
 shape("turtle")               # Set shape to Turtle
 
+for i in range(30):           # Repeat 30 times
+    randomcolour()                  # Choose a random colour
+    randomplace()                   # Move to a random place
+    stamp()                         # Stamp the turtle shape
 
 --- /code ---
 
---- task ---
+### Step 2
 
-**Test**: Run your code several times.  
-Each time you run the code, the turtle should appear in a different place and a different colour, without drawing any lines.
+**Test**: Run your code and watch what happens.  
+You should see many turtle shapes stamped in different places and colours across the screen.
 
---- /task ---
 
 </div>
 
 <div class="c-project-output">
-  <img src="images/randomplace.png"
-       alt="Three turtles shown in different positions on the screen, demonstrating that the turtle appears in a random place each time the code runs.">
-</div>
-
-<div class="c-project-callout c-project-callout--debug">
-
-### Debugging
-
-- If lines appear, check `penup()` and `pendown()`
-- If the cursor is an arrow, check where `shape("turtle")` is called
-
+  <img src="images/stamp.png"
+       alt="Many small turtle shapes stamped across the screen in different colours and positions, creating a scattered turtle art pattern.">
 </div>
