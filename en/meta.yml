@@ -16,19 +16,19 @@ hardware: ''
 software: python
 version: 3
 last_tested: 2025-01-03
+landing: true
 steps:
-- title: What you will make
 - title: Set the turtle colour
+- title: Make the colour random
   completion:
   - engaged
-- title: Make the colour random
 - title: Turn the colour code into a function
   completion:
   - internal
 - title: Move the turtle to a random place
 - title: Create turtle stamp art
 - title: Draw modern art with rectangles
-- title: Challenge - Rotate shapes randomly
-  challenge: true
   completion:
   - external
+- title: "Challenge: Rotate shapes randomly"
+  challenge: true

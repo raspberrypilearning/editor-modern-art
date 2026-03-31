@@ -1,19 +1,9 @@
-<h2 class="c-project-heading--task">Draw modern art with rectangles</h2>
+<h2 class="c-project-heading--task">Challenge: Rotate shapes randomly</h2>
 
---- task ---
-Replace turtle stamps with randomly sized rectangles.
---- /task ---
+### Step 1
+Add random rotation to your artwork.
 
-You can turn your turtle art into modern art by drawing rectangles instead. **Comment out** the lines of code you don't need, and add some instructions for rectangles.
-
-<div class="c-project-callout c-project-callout--tip">
-
-### Tip
-
-Commenting out means telling the computer to ignore a line of code without deleting it.
-In Python, you do this by putting a # at the start of the line. 
-
-</div>
+You can **rotate** the turtle to make the rectangles appear at different angles.
 
 <div class="c-project-code">
 --- code ---
@@ -22,7 +12,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 1
-line_highlights: 19-25, 27-44,46-47
+line_highlights: 27-28,35
 ---
 
 from turtle import *          # Import turtle graphics tools
@@ -51,11 +41,15 @@ def randomplace():             # Function to move the turtle to a random positio
 #     randomplace()            # Move to a random place
 #     stamp()                  # Stamp the turtle shape
 
+def randomheading():           # Function to set a random heading for the next rectangle
+    setheading(randint(1, 360))     # Choose a random angle for the heading
+
 def draw_rectangle():          # Function to draw a random-sized rectangle:
     randomcolour()                  # Choose a random colour
     randomplace()                   # Move to a random place
     length = randint(10, 100)       # Choose a random width
     height = randint(10, 100)       # Choose a random height
+    randomheading()                 # Choose a random rotation
     begin_fill()                    # Start filling the shape with colour
     for i in range(2):              # Draw two pairs of sides
         forward(length)                 # Draw the top/bottom edge
@@ -69,17 +63,25 @@ for i in range(30):            # Repeat 30 times
 
 --- /code ---
 
---- task ---
+### Step 2
 
-**Test**: Run your code and check the output.  
-The turtle stamps should be gone and replaced with many coloured rectangles of different sizes and positions.
+**Test**: Run your code several times.  
+The rectangles should appear at different angles each time the program runs.
 
---- /task ---
 
 </div>
 
 <div class="c-project-output">
-  <img src="images/rectangles.png"
-       alt="A piece of modern art made from overlapping rectangles of different sizes, colours and positions.">
+  <img src="images/randomheading.png"
+       alt="A piece of modern art made from overlapping rectangles of different sizes, colours, positions, and orientations.">
 </div>
 
+
+<div class="c-project-callout c-project-callout--tip">
+
+### Tip
+
+- To make the drawing go faster, add `speed(0)` to your `draw_rectangle()` function and watch it go!
+- Changing the number in `range(30)` changes how many rectangles are drawn - have a play with this and run the code again!
+
+</div>

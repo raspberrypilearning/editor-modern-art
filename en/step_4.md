@@ -1,11 +1,10 @@
-<h2 class="c-project-heading--task">Turn the colour code into a function</h2>
+<h2 class="c-project-heading--task">Move the turtle to a random place</h2>
 
---- task ---
-Create a function to set a random turtle colour.
---- /task ---
+### Step 1
+Move the turtle to a random position on the screen.
 
-Writing the same code again and again is slow and hard to read.  
-You can group often repeated code together in a *function* and run it whenever you need it.
+The centre of the screen is at `(0, 0)`.  
+You can move the turtle to a random x and y position.
 
 <div class="c-project-code">
 --- code ---
@@ -14,7 +13,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 1
-line_highlights: 6-12
+line_highlights: 12-17,20
 ---
 
 from turtle import *          # Import turtle graphics tools
@@ -28,32 +27,38 @@ def randomcolour():           # Function to set a random turtle colour
     blue = randint(0, 255)          # Pick a random blue value
     color(red, green, blue)         # Set the turtle colour
 
+def randomplace():            # Function to move the turtle to a random position
+    penup()                   # Lift the pen so no line is drawn
+    x = randint(-100, 100)    # Pick a random x coordinate
+    y = randint(-100, 100)    # Pick a random y coordinate
+    goto(x, y)                # Move to the random position
+    pendown()                 # Put the pen back down
+
 randomcolour()                # Choose a random colour
+randomplace()                 # Move to a random place
 shape("turtle")               # Set shape to Turtle
+
 
 --- /code ---
 
---- task ---
+### Step 2
 
-**Test**: Run your code and check the output.  
-The turtle should still appear in a random colour, even though the colour code is now inside a function.
+**Test**: Run your code several times.  
+Each time you run the code, the turtle should appear in a different place and a different colour, without drawing any lines.
 
---- /task ---
 
 </div>
 
 <div class="c-project-output">
-<pre><div class="c-project-output">
-  <img src="images/randomcolours.png"
-       alt="Three turtles shown after different runs of the program, each appearing in a different random colour.">
-</div>
-</pre>
+  <img src="images/randomplace.png"
+       alt="Three turtles shown in different positions on the screen, demonstrating that the turtle appears in a random place each time the code runs.">
 </div>
 
 <div class="c-project-callout c-project-callout--debug">
 
 ### Debugging
 
-- If your turtle is black, check that you have *called* the function with `randomcolour()` at the bottom
+- If lines appear, check `penup()` and `pendown()`
+- If the cursor is an arrow, check where `shape("turtle")` is called
 
 </div>
