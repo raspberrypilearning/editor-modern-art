@@ -1,9 +1,10 @@
 <h2 class="c-project-heading--task">Turn the colour code into a function</h2>
 
-### Step 1
 Create a function to set a random turtle colour.
 
-Writing the same code again and again is slow and hard to read.  
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+
+Writing the same code again and again is slow and hard to read.
 You can group often repeated code together in a *function* and run it whenever you need it.
 
 <div class="c-project-code">
@@ -19,7 +20,7 @@ line_highlights: 6-12
 from turtle import *          # Import turtle graphics tools
 from random import *          # Import random number tools
 
-colormode(255)                # Use RGB colour values from 0–255
+colormode(255)                # Use RGB colour values from 0-255
 
 def randomcolour():           # Function to set a random turtle colour
     red = randint(0, 255)           # Pick a random red value
@@ -31,27 +32,20 @@ randomcolour()                # Choose a random colour
 shape("turtle")               # Set shape to Turtle
 
 --- /code ---
-
-### Step 2
-
-**Test**: Run your code and check the output.  
-The turtle should still appear in a random colour, even though the colour code is now inside a function.
-
-
 </div>
-
-<div class="c-project-output">
-<pre><div class="c-project-output">
-  <img src="images/randomcolours.png"
-       alt="Three turtles shown after different runs of the program, each appearing in a different random colour.">
-</div>
-</pre>
-</div>
-
-<div class="c-project-callout c-project-callout--debug">
 
 ### Debugging
+<div class="c-project-callout c-project-callout--debug">
 
 - If your turtle is black, check that you have *called* the function with `randomcolour()` at the bottom
 
+</div>
+
+## Now run your code
+
+The turtle should still appear in a random colour, even though the colour code is now inside a function.
+
+<div class="c-project-output">
+  <img src="images/randomcolours.png"
+       alt="Three turtles shown after different runs of the program, each appearing in a different random colour.">
 </div>
