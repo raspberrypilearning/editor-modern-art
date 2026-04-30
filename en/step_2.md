@@ -1,7 +1,8 @@
 <h2 class="c-project-heading--task">Make the colour random</h2>
 
-### Step 1
-Use random numbers to change the turtle’s colour each time.
+Use random numbers to change the turtle's colour each time.
+
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Instead of choosing the colour yourself, you can let Python choose random values between 0 and 255 using `randint(0, 255)`.
 
@@ -18,21 +19,17 @@ line_highlights: 6
 from turtle import *          # Import turtle graphics tools
 from random import *          # Import random number tools
 
-colormode(255)                # Use RGB colour values from 0–255
+colormode(255)                # Use RGB colour values from 0-255
 
 color(randint(0, 255), randint(0, 255), randint(0, 255))        # Set colour values to three random numbers
 shape("turtle")               # Set shape to Turtle
 
 --- /code ---
-
-### Step 2
-
-**Test**: Run your code several times.  
-Each time you run the code, the turtle should appear in a different colour.
-
-
-
 </div>
+
+## Now run your code
+
+Each time you run the code, the turtle should appear in a different colour.
 
 <div class="c-project-output">
   <img src="images/randomcolours.png"

@@ -1,7 +1,8 @@
 <h2 class="c-project-heading--task">Create turtle stamp art</h2>
 
-### Step 1
 Use stamps and a **loop** to create turtle art.
+
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 The `stamp()` command leaves a copy of the turtle on the screen. By putting it inside a **loop**, you can make lots of turtle stamps at once.
 
@@ -18,7 +19,7 @@ line_highlights: 21-25
 from turtle import *          # Import turtle graphics tools
 from random import *          # Import random number tools
 
-colormode(255)                # Use RGB colour values from 0–255
+colormode(255)                # Use RGB colour values from 0-255
 
 def randomcolour():           # Function to set a random turtle colour
     red = randint(0, 255)           # Pick a random red value
@@ -41,14 +42,11 @@ for i in range(30):           # Repeat 30 times
     stamp()                         # Stamp the turtle shape
 
 --- /code ---
-
-### Step 2
-
-**Test**: Run your code and watch what happens.  
-You should see many turtle shapes stamped in different places and colours across the screen.
-
-
 </div>
+
+## Now run your code
+
+You should see many turtle shapes stamped in different places and colours across the screen.
 
 <div class="c-project-output">
   <img src="images/stamp.png"
