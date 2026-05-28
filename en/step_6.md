@@ -2,8 +2,6 @@
 
 Replace turtle stamps with randomly sized rectangles.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 You can turn your turtle art into modern art by drawing rectangles instead. **Comment out** the lines of code you don't need, and add some instructions for rectangles.
 
 ### Tip
