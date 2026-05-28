@@ -2,8 +2,6 @@
 
 Move the turtle to a random position on the screen.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 The centre of the screen is at `(0, 0)`.
 You can move the turtle to a random x and y position.
 
