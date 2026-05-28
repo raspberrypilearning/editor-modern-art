@@ -2,8 +2,6 @@
 
 Use random numbers to change the turtle's colour each time.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 Instead of choosing the colour yourself, you can let Python choose random values between 0 and 255 using `randint(0, 255)`.
 
 <div class="c-project-code">

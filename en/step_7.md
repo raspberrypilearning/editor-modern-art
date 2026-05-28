@@ -2,8 +2,6 @@
 
 Add random rotation to your artwork.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 You can **rotate** the turtle to make the rectangles appear at different angles.
 
 <div class="c-project-code">

@@ -2,8 +2,6 @@
 
 Use stamps and a **loop** to create turtle art.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 The `stamp()` command leaves a copy of the turtle on the screen. By putting it inside a **loop**, you can make lots of turtle stamps at once.
 
 <div class="c-project-code">

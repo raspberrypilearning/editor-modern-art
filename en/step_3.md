@@ -2,8 +2,6 @@
 
 Create a function to set a random turtle colour.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 Writing the same code again and again is slow and hard to read.
 You can group often repeated code together in a *function* and run it whenever you need it.
 
