@@ -2,8 +2,6 @@
 
 Set the turtle's colour using red, green, and blue values.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 RGB colours are made by mixing red, green, and blue light. Each value controls how strong that colour is: `0` means none and `255` means maximum. Different combinations create different colours.
 
 Each colour value can be between `0` and `255`.
