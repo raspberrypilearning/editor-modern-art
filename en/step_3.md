@@ -3,7 +3,7 @@
 Create a function to set a random turtle colour.
 
 Writing the same code again and again is slow and hard to read.
-You can group often repeated code together in a *function* and run it whenever you need it.
+You can group often repeated code together in a **function** and run it whenever you need it.
 
 <div class="c-project-code">
 --- code ---
@@ -35,7 +35,7 @@ shape("turtle")               # Set shape to Turtle
 ### Debugging
 <div class="c-project-callout c-project-callout--debug">
 
-- If your turtle is black, check that you have *called* the function with `randomcolour()` at the bottom
+- If your turtle is black, check that you have **called** the function with `randomcolour()` at the bottom
 
 </div>
 
