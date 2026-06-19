@@ -30,8 +30,8 @@ shape("turtle")               # Set shape to Turtle
 ### Tip
 <div class="c-project-callout c-project-callout--tip">
 
-- Red, green, and blue (RGB) values range from 0 to 255 - using numbers outside this range will give an error
-- Changing the numbers changes the colour - have a play with them and run the code again!
+- Red, green, and blue (RGB) values range from 0 to 255. Using numbers outside this range will give an error.
+- Changing the numbers changes the colour. Have a play with them and run the code again!
 
 </div>
 
