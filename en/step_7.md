@@ -1,18 +1,10 @@
-<h2 class="c-project-heading--task">Challenge: Rotate shapes randomly</h2>
+## Challenge: Rotate shapes randomly
 
 Add random rotation to your artwork.
 
 You can **rotate** the turtle to make the rectangles appear at different angles.
 
-<div class="c-project-code">
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 1
-line_highlights: 27-28,35
----
+```python filename="main.py" line_numbers="true" line_number_start="1" line_highlights="27-28,35"
 
 from turtle import *          # Import turtle graphics tools
 from random import *          # Import random number tools
@@ -60,22 +52,15 @@ def draw_rectangle():          # Function to draw a random-sized rectangle:
 for i in range(30):            # Repeat 30 times
     draw_rectangle()           # Draw a rectangle
 
---- /code ---
-</div>
+```
 
-### Tip
-<div class="c-project-callout c-project-callout--tip">
-
-- To make the drawing go faster, add `speed(0)` to your `draw_rectangle()` function and watch it go!
-- Changing the number in `range(30)` changes how many rectangles are drawn - have a play with this and run the code again!
-
-</div>
+> [!TIP]
+>
+> - To make the drawing go faster, add `speed(0)` to your `draw_rectangle()` function and watch it go!
+> - Changing the number in `range(30)` changes how many rectangles are drawn - have a play with this and run the code again!
 
 ## Now run your code
 
 The rectangles should appear at different angles each time the program runs.
 
-<div class="c-project-output">
-  <img src="images/randomheading.png"
-       alt="A piece of modern art made from overlapping rectangles of different sizes, colours, positions, and orientations.">
-</div>
+![A piece of modern art made from overlapping rectangles of different sizes, colours, positions, and orientations.](images/randomheading.png)

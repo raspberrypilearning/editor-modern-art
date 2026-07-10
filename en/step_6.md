@@ -1,26 +1,15 @@
-<h2 class="c-project-heading--task">Draw modern art with rectangles</h2>
+## Draw modern art with rectangles
 
 Replace turtle stamps with randomly sized rectangles.
 
 You can turn your turtle art into modern art by drawing rectangles instead. **Comment out** the lines of code you don't need, and add some instructions for rectangles.
 
-### Tip
-<div class="c-project-callout c-project-callout--tip">
+> [!TIP]
+>
+> Commenting out means telling the computer to ignore a line of code without deleting it.
+> In Python, you do this by putting a # at the start of the line.
 
-Commenting out means telling the computer to ignore a line of code without deleting it.
-In Python, you do this by putting a # at the start of the line.
-
-</div>
-
-<div class="c-project-code">
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 1
-line_highlights: 19-25, 27-44,46-47
----
+```python filename="main.py" line_numbers="true" line_number_start="1" line_highlights="19-25,27-44,46-47"
 
 from turtle import *          # Import turtle graphics tools
 from random import *          # Import random number tools
@@ -64,14 +53,10 @@ def draw_rectangle():          # Function to draw a random-sized rectangle:
 for i in range(30):            # Repeat 30 times
     draw_rectangle()           # Draw a rectangle
 
---- /code ---
-</div>
+```
 
 ## Now run your code
 
 The turtle stamps should be gone and replaced with many coloured rectangles of different sizes and positions.
 
-<div class="c-project-output">
-  <img src="images/rectangles.png"
-       alt="A piece of modern art made from overlapping rectangles of different sizes, colours and positions.">
-</div>
+![A piece of modern art made from overlapping rectangles of different sizes, colours and positions.](images/rectangles.png)
