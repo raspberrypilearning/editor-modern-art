@@ -1,19 +1,11 @@
-<h2 class="c-project-heading--task">Turn the colour code into a function</h2>
+## Turn the colour code into a function
 
 Create a function to set a random turtle colour.
 
 Writing the same code again and again is slow and hard to read.
 You can group often repeated code together in a **function** and run it whenever you need it.
 
-<div class="c-project-code">
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 1
-line_highlights: 6-12
----
+```python filename="main.py" line_numbers="true" line_number_start="1" line_highlights="6-12"
 
 from turtle import *          # Import turtle graphics tools
 from random import *          # Import random number tools
@@ -29,21 +21,14 @@ def randomcolour():           # Function to set a random turtle colour
 randomcolour()                # Choose a random colour
 shape("turtle")               # Set shape to Turtle
 
---- /code ---
-</div>
+```
 
-### Debugging
-<div class="c-project-callout c-project-callout--debug">
-
-- If your turtle is black, check that you have **called** the function with `randomcolour()` at the bottom
-
-</div>
+> [!DEBUG]
+>
+> - If your turtle is black, check that you have **called** the function with `randomcolour()` at the bottom
 
 ## Now run your code
 
 The turtle should still appear in a random colour, even though the colour code is now inside a function.
 
-<div class="c-project-output">
-  <img src="images/randomcolours.png"
-       alt="Three turtles shown after different runs of the program, each appearing in a different random colour.">
-</div>
+![Three turtles shown after different runs of the program, each appearing in a different random colour.](images/randomcolours.png)
